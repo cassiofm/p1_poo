@@ -15,7 +15,7 @@
     <body>
         <div align="center">
         <br><br>
-        <h3>Cássio Félix de Moura</h3>
+        <h3>Cássio Félix  Moura</h3>
         <br><hr><br>
         <h3>R.A. : 1290481913009</h3>
         <h3><a href="https://github.com/cassiofm">Meu Repositório</a></h3>
