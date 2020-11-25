@@ -9,7 +9,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="WEB-INF/menu.jspf"%>
 
-<% ArrayList<Disciplina> disciplinas = (ArrayList) application.getAttribute("disciplinas");
+<%--<% ArrayList<Disciplina> disciplinas = (ArrayList) application.getAttribute("disciplinas");
     if(disciplinas == null){
         disciplinas = new ArrayList();
         disciplinas.add(new Disciplina("IAL205", "Aplicações de sensores em ambiente agrícola. Arquiteturas de hardware e software","2" )); 
@@ -27,7 +27,7 @@
         }
     }
     
-%>
+%>--%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,11 +41,12 @@
         <br><hr><br>
         <h3>R.A. : 1290481913009</h3>
         
-        <% Disciplina disciplina = new Disciplina();
+        <%--<% Disciplina disciplina = new Disciplina();
             ArrayList list = disciplina.getList(disciplinas);
             int discSize = list.size();
-        %>
-        <h3>Disciplinas matriculadas no semestre: <%=discSize%></h3>
+        %>--%>
+        <%--<h3>Disciplinas matriculadas no semestre: <%=discSize%></h3>--%>
+        <h3>Disciplinas matriculadas no semestre: <%= Disciplina.getList().size()%></h3>
         </div>
     </body>
 </html>

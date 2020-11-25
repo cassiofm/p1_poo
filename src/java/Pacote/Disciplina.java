@@ -58,12 +58,21 @@ public class Disciplina {
         this.nota = nota;
     }
     
-    public ArrayList getList(ArrayList<Disciplina> dis){
+    /*public ArrayList getList(ArrayList<Disciplina> dis){
         ArrayList<String> list = new ArrayList<>();
             for (Disciplina disciplina :dis) {
                 list.add(disciplina.getNome());
         }
-            return list;
+            return list; 
+    }*/
+    public static ArrayList<Disciplina> getList(){
+        ArrayList<Disciplina> list = new ArrayList<>();
+        list.add(new Disciplina("Materia 1", "Ementa 1", "4"));
+        list.add(new Disciplina("Materia 2", "Ementa 2", "4"));
+        list.add(new Disciplina("Materia 3", "Ementa 3", "4"));
+        list.add(new Disciplina("Materia 4", "Ementa 4", "4"));
+        
+        return list;
     }
     
 }
