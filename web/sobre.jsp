@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="WEB-INF/menu.jspf"%>
+<%@include file="WEB-INF/jspf/menu.jspf"%>
 <!DOCTYPE html>
 <html>
     <head>

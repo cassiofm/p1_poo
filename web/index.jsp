@@ -7,7 +7,7 @@
 <%@page import="Pacote.Disciplina"%>
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="WEB-INF/menu.jspf"%>
+<%@include file="WEB-INF/jspf//menu.jspf"%>
 
 <%--<% ArrayList<Disciplina> disciplinas = (ArrayList) application.getAttribute("disciplinas");
     if(disciplinas == null){
