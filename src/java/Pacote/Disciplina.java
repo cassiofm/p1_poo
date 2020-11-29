@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Pacote;
 
 import java.util.ArrayList;
@@ -15,16 +20,16 @@ public class Disciplina {
     private String nome;
     private String ementa;
     private String ciclo;
-    private Double nota;
+    private Float nota;
 
-    public Disciplina(String nome, String ementa, String ciclo, Double nota) {
+    public Disciplina(String nome, String ementa, String ciclo) {
         this.nome = nome;
         this.ementa = ementa;
         this.ciclo = ciclo;
-        this.nota = nota;
     }
 
-
+    public Disciplina() {
+    }
 
     public String getNome() {
         return nome;
@@ -50,20 +55,29 @@ public class Disciplina {
         this.ciclo = ciclo;
     }
 
-    public Double getNota() {
+    public Float getNota() {
         return nota;
     }
 
-    public void setNota(Double nota) {
+    public void setNota(Float nota) {
         this.nota = nota;
     }
     
-public static String getCreateStatement(){
-    return "CREATE TABLE IF NOT EXISTS disciplinas("
-            + "nome VARCHAR(50) UNIQUE,"
-            + "ementa VARCHAR(200),"
-            + "ciclo VARCHAR(2),"
-            + "nota Double";
-}
+    /*public ArrayList getList(ArrayList<Disciplina> dis){
+        ArrayList<String> list = new ArrayList<>();
+            for (Disciplina disciplina :dis) {
+                list.add(disciplina.getNome());
+        }
+            return list; 
+    }*/
+    public static ArrayList<Disciplina> getList(){
+        ArrayList<Disciplina> list = new ArrayList<>();
+        list.add(new Disciplina("Materia 1", "Ementa 1", "4"));
+        list.add(new Disciplina("Materia 2", "Ementa 2", "4"));
+        list.add(new Disciplina("Materia 3", "Ementa 3", "4"));
+        list.add(new Disciplina("Materia 4", "Ementa 4", "4"));
+        
+        return list;
+    }
     
 }
