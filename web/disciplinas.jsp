@@ -21,7 +21,7 @@
         if(request.getParameter("update")!=null){
                try{
                    int i = Integer.parseInt(request.getParameter("i"));
-                   Float nota = Float.parseFloat(request.getParameter("nota"));
+                   Double nota = Double.parseDouble(request.getParameter("nota"));
                    list.get(i).setNota(nota);
                    response.sendRedirect(request.getRequestURI());
                }catch(Exception ex){
@@ -66,7 +66,7 @@
                      <td>
                          <form>
                              <input type="hidden" name="i" value="<%= i%>"/>
-                             <input type="number"  name="nota"/>
+                             <input type="text"  name="nota"/>
                              <input type="submit" name="update" value="Alterar nota"/>
                          </form>
                      </td>

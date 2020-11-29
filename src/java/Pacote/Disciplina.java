@@ -15,7 +15,7 @@ public class Disciplina {
     private String nome;
     private String ementa;
     private String ciclo;
-    private Float nota;
+    private Double nota;
 
     public Disciplina(String nome, String ementa, String ciclo) {
         this.nome = nome;
@@ -50,11 +50,11 @@ public class Disciplina {
         this.ciclo = ciclo;
     }
 
-    public Float getNota() {
+    public Double getNota() {
         return nota;
     }
 
-    public void setNota(Float nota) {
+    public void setNota(Double nota) {
         this.nota = nota;
     }
     
